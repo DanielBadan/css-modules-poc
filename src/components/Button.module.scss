@@ -1,0 +1,21 @@
+.root {
+  color: pink;
+  background: gray;
+
+  &--active {
+    background: pink;
+    color: gray;
+  }
+}
+
+.link {
+  color: blue;
+}
+
+.big-btn {
+  color: green;
+}
+
+.smallBtn {
+  color: purple;
+}
