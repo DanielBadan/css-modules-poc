@@ -6,6 +6,23 @@
     background: pink;
     color: gray;
   }
+
+  &__active {
+    color: red;
+    background: blue;
+  }
+}
+
+.root-test {
+  content: 'test';
+}
+
+.root--pressed {
+  content: 'pressed';
+}
+
+.root__pressed {
+  content: 'pressed';
 }
 
 .link {

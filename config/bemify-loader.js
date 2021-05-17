@@ -7,7 +7,8 @@ const localsMatcher = /exports\.locals\s=\s\{([\s\S]+)\};/g;
 module.exports = function(source) {
   // You can set the prefix used for the modifiers in the webpack config
   const { modifierPrefix = "$" } = getOptions(this);
-
+  
+  console.log(source);
   // We find the exports.locals piece of code
   return source.replace(localsMatcher, (_, object) => {
     // Convert the entries to an object
