@@ -8,13 +8,6 @@ const Button = (props: ButtonProps) => {
 
   console.log(s);
   
-  debugger;
-  // debugger;
-  // return (
-  //   <button onClick={() => setIsActive(!isActive)} className={`${s.root}`}>{props.children}</button>
-  //   // <button onClick={() => setIsActive(!isActive)} className={`${s.root} ${isActive && s['root--active']}`}>{props.children}</button>
-  // )
-
   return (
     <div className={s.wrapper}>
       <div className={s.component}>
