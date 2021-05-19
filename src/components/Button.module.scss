@@ -1,38 +1,45 @@
-.root {
-  color: pink;
-  background: gray;
+.wrapper {
+  display: flex;
+  flex: 1 1 auto;
+}
 
-  &--active {
-    background: pink;
-    color: gray;
-  }
-
-  &__active {
+.button {
+  color: yellow;
+  
+  &_active {
     color: red;
-    background: blue;
+  }
+  
+  &__red-icon {
+    color: blue;
+
+    &_active {
+      color: green;
+    }
   }
 }
 
-.root-test {
-  content: 'test';
+.component {
+  $self: &; // Hey look, it's our new best friend!
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem;
+  position: relative;
+  background: rebeccapurple;
+  min-width: 50%;
+  
+  &--is-reversed {
+    background: white;
+    border-color: lightgray;
+  }
+
+  &__child-element {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: white;
+  }
 }
 
-.root--pressed {
-  content: 'pressed';
-}
-
-.root__pressed {
-  content: 'pressed';
-}
-
-.link {
-  color: blue;
-}
-
-.big-btn {
-  color: green;
-}
-
-.smallBtn {
-  color: purple;
-}

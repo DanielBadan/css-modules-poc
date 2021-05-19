@@ -109,12 +109,6 @@ module.exports = function (webpackEnv) {
           : {},
       },
       {
-        loader: require.resolve('./bemify-loader'),
-        options: {
-          modifierPrefix: "$", // $ is the default value 
-        }
-      },
-      {
         loader: require.resolve('css-loader'),
         options: cssOptions,
       },
@@ -477,6 +471,9 @@ module.exports = function (webpackEnv) {
               test: cssRegex,
               exclude: cssModuleRegex,
               use: getStyleLoaders({
+                modules: {
+                  exportLocalsConvention: "dashesOnly"
+                },
                 importLoaders: 1,
                 sourceMap: isEnvProduction
                   ? shouldUseSourceMap
@@ -499,6 +496,7 @@ module.exports = function (webpackEnv) {
                   : isEnvDevelopment,
                 modules: {
                   getLocalIdent: getCSSModuleLocalIdent,
+                    exportLocalsConvention: "dashesOnly"
                 },
               }),
             },
@@ -510,6 +508,9 @@ module.exports = function (webpackEnv) {
               exclude: sassModuleRegex,
               use: getStyleLoaders(
                 {
+                  modules: {
+                    exportLocalsConvention: "dashesOnly"
+                  },
                   importLoaders: 3,
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
@@ -535,6 +536,7 @@ module.exports = function (webpackEnv) {
                     : isEnvDevelopment,
                   modules: {
                     getLocalIdent: getCSSModuleLocalIdent,
+                      exportLocalsConvention: "dashesOnly"
                   },
                 },
                 'sass-loader'

@@ -1225,6 +1225,11 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
+"@jahed/bem@^1.2.12":
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/@jahed/bem/-/bem-1.2.12.tgz#e88859bebe03eab4223f3da1fe826f91f14e3629"
+  integrity sha512-/Y8Fzy5hanrWzSfXsfayXZdBYiGYAHjrZDq/+B6JSWfft02hfPpzPEmYbOH4PO7TjDQ/WxeuxDhCfZGuqVdyog==
+
 "@jest/console@^26.6.2":
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-26.6.2.tgz#4e04bc464014358b03ab4937805ee36a0aeb98f2"
@@ -2765,6 +2770,11 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+bem-css-modules@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/bem-css-modules/-/bem-css-modules-1.4.2.tgz#d98d81da453635461a4a5add0f9d81e75d63e994"
+  integrity sha512-pDp/WoSm+i/tt2aCeO+/srxGV8+9+yjgsdrEbt8AiWjVsyQakSOslSc610/YpmcfE6fPCP+cvkOWnVkgtxorOA==
 
 bfj@^7.0.2:
   version "7.0.2"

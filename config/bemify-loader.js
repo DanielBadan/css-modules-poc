@@ -2,7 +2,7 @@ const { getOptions } = require("loader-utils");
 
 const camelCased = s => s && s.replace(/-([a-z0-9])/g, g => g[1].toUpperCase());
 
-const localsMatcher = /exports\.locals\s=\s\{([\s\S]+)\};/g;
+const localsMatcher = /__CSS_LOADER_EXPORT___\.locals\s=\s\{([\s\S]+)\};/g;
 
 module.exports = function(source) {
   // You can set the prefix used for the modifiers in the webpack config
@@ -79,6 +79,8 @@ module.exports = function(source) {
     );
 
     // Swap the original locals for the new ones
-    return source.replace(localsMatcher, (_, g) => `exports.locals = ${newLocals};`);
+    return `__CSS_LOADER_EXPORT___.locals = ${newLocals};`;
   });
+
+  // return `export default ${newSource}`;
 };
