@@ -1,0 +1,22 @@
+$colors-red: red;
+$colors-blue: blue;
+$colors-green: green;
+
+// WIDTH
+$screen-x-small: '(min-width: 22.5em)'; // 360px
+$screen-small: '(min-width: 35.5em)'; // 568px
+$screen-medium: '(min-width: 50em)'; // 800px
+$screen-large: '(min-width: 64em)'; // 1024px
+$screen-x-large: '(min-width: 112.5em)'; // 1800px
+
+:export {
+  colors-red :$colors-red;
+  colors-blue :$colors-blue;
+  color-green :$colors-green;
+
+  screen-x-small: $screen-x-small;
+  screen-small: $screen-small;
+  screen-medium: $screen-medium;
+  screen-large: $screen-large;
+  screen-x-large: $screen-x-large;
+}

@@ -1,4 +1,5 @@
 import s from './Button.module.scss';
+import variables from './vars.module.scss';
 
 interface ButtonProps {
   children: string
@@ -7,6 +8,7 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
 
   console.log(s);
+  console.log(variables);
   
   return (
     <div className={s.wrapper}>

@@ -43,3 +43,14 @@
   }
 }
 
+
+.component {
+  color: green;
+
+  &--is-reversed {
+    color: red;
+  }
+  &__child-element {
+    color: blue;
+  }
+}
